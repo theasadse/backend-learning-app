@@ -6,6 +6,7 @@ import { resolvers } from './resolvers';
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
 });
 
 (async () => {
